@@ -1,0 +1,119 @@
+/* Light Theme About Section Styling */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-card {
+  border-radius: 15px;
+  background-color: #ffffff; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+  animation: fadeIn 1s ease-in;
+  text-align: left;
+  color: #333333; /* Dark text for readability */
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  color: #007bff; /* Blue color for heading */
+  margin-bottom: 15px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #555555; /* Slightly lighter gray text */
+  margin-bottom: 20px;
+  line-height: 1.6;
+  animation: fadeIn 2s ease-in;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  animation: fadeIn 2.5s ease-in;
+}
+
+.skills-list li {
+  font-size: 1.1rem;
+  margin: 5px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #28a745; /* Green checkmarks for skills */
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #333333; /* Dark color for subheadings */
+  margin-top: 20px;
+}
+
+/* App Overview Section */
+.app-overview {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Lighter background for App Overview */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-overview-heading {
+  font-size: 2rem;
+  color: #007bff; /* Blue color for the overview heading */
+  margin-bottom: 15px;
+}
+
+.app-overview-description {
+  font-size: 1.1rem;
+  color: #555555; /* Light gray text for description */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.app-features {
+  list-style-type: none;
+  padding: 0;
+  color: #333333; /* Darker text for features */
+}
+
+.app-features li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.app-features li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #28a745; /* Green checkmarks for features */
+}
+
+/* CSS Animation for Fade-In Effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
